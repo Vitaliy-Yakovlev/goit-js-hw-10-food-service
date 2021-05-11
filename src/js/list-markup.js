@@ -1,5 +1,5 @@
 import galeryItems from '../templates/galery-items.hbs';
-import menu from '../js/menu.json';
+import menu from './menu.json';
 import '../css/styles.css';
 
 const Theme = {
