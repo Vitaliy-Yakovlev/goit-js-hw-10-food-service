@@ -12,16 +12,17 @@ refs.input.addEventListener('click', onAddClassListBodylocalStorage);
 saveTheme();
 
 function onAddClassListBodylocalStorage(e) {
-  const addClassName = document.body.classList.toggle('dark-theme');
+  const addClassName = document.body.classList.toggle(Theme.DARK);
 
   if (!addClassName) {
     localStorage.setItem('Theme', JSON.stringify({ LIGHT: 'light-theme' }));
-    document.body.className = 'light-theme';
+    document.body.className = Theme.LIGHT;
   }
 
   if (addClassName) {
     localStorage.setItem('Theme', JSON.stringify({ DARK: 'dark-theme' }));
-    document.body.className = 'dark-theme';
+
+    document.body.className = Theme.DARK;
   }
 }
 
@@ -36,6 +37,6 @@ function saveTheme() {
   }
 
   if (document.body.className === 'dark-theme') {
-    refs.input.checked = 'rtue';
+    refs.input.checked = 'on';
   }
 }
