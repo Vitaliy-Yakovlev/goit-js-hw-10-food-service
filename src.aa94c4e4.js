@@ -9,10 +9,10 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"krre":[function(require,module,exports) {
 
 },{}],"I6vK":[function(require,module,exports) {
-"use strict";var e=r(require("../templates/galery-items.hbs")),t=r(require("./menu.json"));function r(e){return e&&e.__esModule?e:{default:e}}require("../css/styles.css");var u={LIGHT:"light-theme",DARK:"dark-theme"},s=document.querySelector(".js-menu"),n=a(t.default);function a(t){return(0,e.default)(t)}s.insertAdjacentHTML("beforeend",n);
+"use strict";var e=s(require("../templates/galery-items.hbs")),r=s(require("./menu.json"));function s(e){return e&&e.__esModule?e:{default:e}}require("../css/styles.css");var t=document.querySelector(".js-menu"),u=(0,e.default)(r.default);t.insertAdjacentHTML("beforeend",u);
 },{"../templates/galery-items.hbs":"IZdj","./menu.json":"NkM5","../css/styles.css":"krre"}],"fLcI":[function(require,module,exports) {
-var e={LIGHT:"light-theme",DARK:"dark-theme"},t={input:document.querySelector("#theme-switch-toggle")};function a(e){var t=document.body.classList.toggle("dark-theme");t||(localStorage.setItem("Theme",JSON.stringify({LIGHT:"light-theme"})),document.body.className="light-theme"),t&&(localStorage.setItem("Theme",JSON.stringify({DARK:"dark-theme"})),document.body.className="dark-theme")}function m(){if(localStorage.getItem("Theme")){var e=localStorage.getItem("Theme"),a=JSON.parse(e);document.body.className=a.LIGHT||a.DARK}"dark-theme"===document.body.className&&(t.input.checked="rtue")}t.input.addEventListener("click",a),m();
+var e={LIGHT:"light-theme",DARK:"dark-theme"},t={input:document.querySelector("#theme-switch-toggle")};function a(t){var a=document.body.classList.toggle(e.DARK);a||(localStorage.setItem("Theme",JSON.stringify({LIGHT:"light-theme"})),document.body.className=e.LIGHT),a&&(localStorage.setItem("Theme",JSON.stringify({DARK:"dark-theme"})),document.body.className=e.DARK)}function o(){if(localStorage.getItem("Theme")){var e=localStorage.getItem("Theme"),a=JSON.parse(e);document.body.className=a.LIGHT||a.DARK}"dark-theme"===document.body.className&&(t.input.checked="on")}t.input.addEventListener("click",a),o();
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./js/list-markup"),require("./js/add-class");
 },{"./js/list-markup":"I6vK","./js/add-class":"fLcI"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.7ff5f7de.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.aa94c4e4.js.map
